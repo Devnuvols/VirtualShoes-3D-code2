@@ -3,25 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B694FC72C74D73500CC2BE1 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 3B694FC62C74D73500CC2BE1 /* RealityKitContent */; };
 		3B694FC92C74D73500CC2BE1 /* virtualShoesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B694FC82C74D73500CC2BE1 /* virtualShoesApp.swift */; };
 		3B694FCB2C74D73500CC2BE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B694FCA2C74D73500CC2BE1 /* ContentView.swift */; };
 		3B694FCD2C74D73700CC2BE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B694FCC2C74D73700CC2BE1 /* Assets.xcassets */; };
 		3B694FD02C74D73700CC2BE1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B694FCF2C74D73700CC2BE1 /* Preview Assets.xcassets */; };
+		3B694FDD2C74D89800CC2BE1 /* shoes3D in Frameworks */ = {isa = PBXBuildFile; productRef = 3B694FDC2C74D89800CC2BE1 /* shoes3D */; };
+		3B694FE02C74D9DA00CC2BE1 /* shoes.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B694FDF2C74D9D800CC2BE1 /* shoes.json */; };
+		3B694FE22C74DB1C00CC2BE1 /* ShoesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B694FE12C74DB1C00CC2BE1 /* ShoesModel.swift */; };
+		3B694FE42C74E1B200CC2BE1 /* shoeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B694FE32C74E1B200CC2BE1 /* shoeDetail.swift */; };
+		3B694FE62C74E4E000CC2BE1 /* JSONInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B694FE52C74E4E000CC2BE1 /* JSONInteractor.swift */; };
+		3B694FE82C74E50E00CC2BE1 /* DataInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B694FE72C74E50E00CC2BE1 /* DataInteractor.swift */; };
+		3B694FEA2C74E7A300CC2BE1 /* modelDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B694FE92C74E7A300CC2BE1 /* modelDTO.swift */; };
+		3B694FEC2C74F35600CC2BE1 /* ShoesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B694FEB2C74F35600CC2BE1 /* ShoesViewModel.swift */; };
+		3B694FEE2C74F6DB00CC2BE1 /* shoesTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B694FED2C74F6DB00CC2BE1 /* shoesTest.json */; };
+		3B694FF02C74F81400CC2BE1 /* DataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B694FEF2C74F81400CC2BE1 /* DataTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B694FC12C74D73500CC2BE1 /* virtualShoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = virtualShoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B694FC52C74D73500CC2BE1 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		3B694FC82C74D73500CC2BE1 /* virtualShoesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = virtualShoesApp.swift; sourceTree = "<group>"; };
 		3B694FCA2C74D73500CC2BE1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B694FCC2C74D73700CC2BE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B694FCF2C74D73700CC2BE1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B694FD12C74D73700CC2BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B694FDF2C74D9D800CC2BE1 /* shoes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shoes.json; sourceTree = "<group>"; };
+		3B694FE12C74DB1C00CC2BE1 /* ShoesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesModel.swift; sourceTree = "<group>"; };
+		3B694FE32C74E1B200CC2BE1 /* shoeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shoeDetail.swift; sourceTree = "<group>"; };
+		3B694FE52C74E4E000CC2BE1 /* JSONInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONInteractor.swift; sourceTree = "<group>"; };
+		3B694FE72C74E50E00CC2BE1 /* DataInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInteractor.swift; sourceTree = "<group>"; };
+		3B694FE92C74E7A300CC2BE1 /* modelDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelDTO.swift; sourceTree = "<group>"; };
+		3B694FEB2C74F35600CC2BE1 /* ShoesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesViewModel.swift; sourceTree = "<group>"; };
+		3B694FED2C74F6DB00CC2BE1 /* shoesTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = shoesTest.json; path = virtualShoes/shoesTest.json; sourceTree = SOURCE_ROOT; };
+		3B694FEF2C74F81400CC2BE1 /* DataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B694FC72C74D73500CC2BE1 /* RealityKitContent in Frameworks */,
+				3B694FDD2C74D89800CC2BE1 /* shoes3D in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +75,12 @@
 			children = (
 				3B694FC82C74D73500CC2BE1 /* virtualShoesApp.swift */,
 				3B694FCA2C74D73500CC2BE1 /* ContentView.swift */,
-				3B694FCC2C74D73700CC2BE1 /* Assets.xcassets */,
-				3B694FD12C74D73700CC2BE1 /* Info.plist */,
+				3B694FE32C74E1B200CC2BE1 /* shoeDetail.swift */,
+				3B694FD72C74D7E900CC2BE1 /* ViewModel */,
+				3B694FD92C74D80E00CC2BE1 /* Interactor */,
+				3B694FDE2C74D95D00CC2BE1 /* Model */,
+				3B694FD82C74D7F700CC2BE1 /* Resources */,
+				3B694FDA2C74D81F00CC2BE1 /* System */,
 				3B694FCE2C74D73700CC2BE1 /* Preview Content */,
 			);
 			path = virtualShoes;
@@ -68,7 +89,6 @@
 		3B694FC42C74D73500CC2BE1 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				3B694FC52C74D73500CC2BE1 /* RealityKitContent */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
@@ -76,9 +96,54 @@
 		3B694FCE2C74D73700CC2BE1 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				3B694FED2C74F6DB00CC2BE1 /* shoesTest.json */,
 				3B694FCF2C74D73700CC2BE1 /* Preview Assets.xcassets */,
+				3B694FEF2C74F81400CC2BE1 /* DataTest.swift */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3B694FD72C74D7E900CC2BE1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B694FEB2C74F35600CC2BE1 /* ShoesViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		3B694FD82C74D7F700CC2BE1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3B694FDF2C74D9D800CC2BE1 /* shoes.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3B694FD92C74D80E00CC2BE1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3B694FE52C74E4E000CC2BE1 /* JSONInteractor.swift */,
+				3B694FE72C74E50E00CC2BE1 /* DataInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		3B694FDA2C74D81F00CC2BE1 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				3B694FD12C74D73700CC2BE1 /* Info.plist */,
+				3B694FCC2C74D73700CC2BE1 /* Assets.xcassets */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		3B694FDE2C74D95D00CC2BE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B694FE12C74DB1C00CC2BE1 /* ShoesModel.swift */,
+				3B694FE92C74E7A300CC2BE1 /* modelDTO.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,7 +163,7 @@
 			);
 			name = virtualShoes;
 			packageProductDependencies = (
-				3B694FC62C74D73500CC2BE1 /* RealityKitContent */,
+				3B694FDC2C74D89800CC2BE1 /* shoes3D */,
 			);
 			productName = virtualShoes;
 			productReference = 3B694FC12C74D73500CC2BE1 /* virtualShoes.app */;
@@ -128,6 +193,9 @@
 				Base,
 			);
 			mainGroup = 3B694FB82C74D73500CC2BE1;
+			packageReferences = (
+				3B694FDB2C74D89800CC2BE1 /* XCLocalSwiftPackageReference "../shoes3D" */,
+			);
 			productRefGroup = 3B694FC22C74D73500CC2BE1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -142,7 +210,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B694FEE2C74F6DB00CC2BE1 /* shoesTest.json in Resources */,
 				3B694FD02C74D73700CC2BE1 /* Preview Assets.xcassets in Resources */,
+				3B694FE02C74D9DA00CC2BE1 /* shoes.json in Resources */,
 				3B694FCD2C74D73700CC2BE1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,8 +224,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B694FEA2C74E7A300CC2BE1 /* modelDTO.swift in Sources */,
+				3B694FE82C74E50E00CC2BE1 /* DataInteractor.swift in Sources */,
 				3B694FCB2C74D73500CC2BE1 /* ContentView.swift in Sources */,
+				3B694FE62C74E4E000CC2BE1 /* JSONInteractor.swift in Sources */,
+				3B694FE42C74E1B200CC2BE1 /* shoeDetail.swift in Sources */,
+				3B694FEC2C74F35600CC2BE1 /* ShoesViewModel.swift in Sources */,
 				3B694FC92C74D73500CC2BE1 /* virtualShoesApp.swift in Sources */,
+				3B694FF02C74F81400CC2BE1 /* DataTest.swift in Sources */,
+				3B694FE22C74DB1C00CC2BE1 /* ShoesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,10 +433,17 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		3B694FDB2C74D89800CC2BE1 /* XCLocalSwiftPackageReference "../shoes3D" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../shoes3D;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		3B694FC62C74D73500CC2BE1 /* RealityKitContent */ = {
+		3B694FDC2C74D89800CC2BE1 /* shoes3D */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = RealityKitContent;
+			productName = shoes3D;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
