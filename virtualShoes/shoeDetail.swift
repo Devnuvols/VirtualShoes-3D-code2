@@ -13,6 +13,11 @@ struct shoeDetail: View {
     var body: some View {
         Form {
             Section {
+                Text(selectetShoe.favorito ? "Si" : "No")
+            } header: {
+                Text("Favorito")
+            }
+            Section {
                 Text( .init(selectetShoe.description))
             } header: {
                 Text("Descripción")

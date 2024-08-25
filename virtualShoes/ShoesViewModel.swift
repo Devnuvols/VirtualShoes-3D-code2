@@ -8,10 +8,11 @@
 import SwiftUI
 @Observable
 
+
 final class ShoesViewModel {
     let interactor: DataInteractor
     
-    var shoes: [ShoeModel]
+    var shoes: [ShoeModel] = []
     var selectedShoe: ShoeModel?
     
     @ObservationIgnored var errorMsg = ""
@@ -27,13 +28,10 @@ final class ShoesViewModel {
             showAlert.toggle()
         }
     }
-    /*
-    init(interactor: DataInteractor, shoes: [ShoeModel], selectedShoe: ShoeModel? = nil, errorMsg: String = "", showAlert: Bool = false) {
-        self.interactor = interactor
-        self.shoes = shoes
-        self.selectedShoe = selectedShoe
-        self.errorMsg = errorMsg
-        self.showAlert = showAlert
-    }
-     */
+    // Cambia el valor de "favorito" para un zapato en particular
+     //  func toggleFavorito(for shoe: ShoeModel) {
+     //      if let index = shoes.firstIndex(where: { $0.id == shoe.id }) {
+     //          shoes[index].favorito.toggle()
+     //      }
+     //  }
 }

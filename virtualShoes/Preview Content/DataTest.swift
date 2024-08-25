@@ -8,12 +8,23 @@
 import SwiftUI
 
 struct DataTest: DataInteractor {
+    var url: URL{Bundle.main.url(forResource: "shoesTest", withExtension: "json")!}
+}
+
+extension ContentView {
     static var preview: some View {
         ContentView()
             .environment(ShoesViewModel(interactor: DataTest()))
     }
 }
 
+extension favoritosExpositor {
+    static var preview: some View {
+       // favoritosExpositor(shoesVM: ShoesViewModel(interactor: DataTest()))
+        favoritosExpositor()
+            .environment(ShoesViewModel(interactor: DataTest()))
+    }
+}
 extension ShoeModel {
     static let test = ShoeModel(id:10123,
                                 name: "Urban Explorer",

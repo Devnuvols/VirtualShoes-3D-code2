@@ -23,6 +23,7 @@ struct ShoeModel: Codable, Identifiable, Hashable{
     let colors: [String]
     let warranty: Int
     let certifications: [String]
+    var favorito: Bool = false
 }
 
 extension ShoeDTO {
@@ -41,7 +42,8 @@ extension ShoeDTO {
                   weight: weight,
                   colors: colors,
                   warranty: warranty,
-                  certifications: certifications
+                  certifications: certifications,
+                  favorito: false
                   )
                 
     }

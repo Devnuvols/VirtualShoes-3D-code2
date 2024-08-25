@@ -10,17 +10,15 @@ import RealityKit
 import shoes3D
 
 struct ContentView: View {
-    //@Environment(ShoesViewModel.self) private var shoesVM
-    //@Environment(\.openwindow) private var open
+    @Environment(ShoesViewModel.self) private var shoesVM
+    @Environment(\.openWindow) private var open
     
-    @State var shoesVM  = ShoesViewModel()
-    
-    
+    @State private var favorito = false
     @State private var touch = false
     @State private var rotate = false
     @State private var rotationAngle: Double = 0.0
     
-    @State private var currentRotationY:CGFloat = 0.0
+    @State private var currentRotationY:CGFloat = 0.0 
     @State private var lastDragValueY: CGFloat = 0.0
     @State private var velocityY: CGFloat = 0.0
     @State private var currentRotationX:CGFloat = 0.0
@@ -63,11 +61,29 @@ struct ContentView: View {
                         .toggleStyle(.button)
                         .disabled(rotate)
                         Button {
-                            //open(id: "shoeDetail")
+                            open(id: "shoeVolumetric")
                         } label: {
                             Text("Ver en detalle 3D")
                         }
-                        
+                        Toggle(
+                            isOn: Binding(
+                                get: { shoesVM.selectedShoe?.favorito ?? false },
+                                set: { newValue in
+                                    shoesVM.selectedShoe?.favorito = newValue
+                                    
+                                    if let index = shoesVM.shoes.firstIndex(where: { $0.id == shoesVM.selectedShoe?.id }) {
+                                        shoesVM.shoes[index].favorito = newValue
+                                     }
+                                }
+                            )) {
+                            Image(systemName: shoesVM.selectedShoe?.favorito == true ? "star.fill" : "star")
+                        }
+                        .toggleStyle(.button)
+                        Button {
+                            open(id: "shoesFavoTest")
+                        } label: {
+                            Text("Ver favoritos")
+                        }
                     }
                     
                 }
@@ -94,7 +110,6 @@ struct ContentView: View {
                 } placeholder: {
                     ProgressView()
                 }
-                //test
                 .gesture(
                         DragGesture()
                             .onChanged { value in
@@ -118,11 +133,9 @@ struct ContentView: View {
                 .gesture(
                     MagnifyGesture()
                         .onChanged { value in
-                            
-                           // if value.magnification < 1 && value.magnification > 0.4 {
-                                //escala = (1.0 - (value.magnification + escalaInicial))
-                                escala += value.magnification
-                        //}
+                            if value.magnification < 1 && value.magnification > 0.4 {
+                                escala = (1.0 - (value.magnification + escalaInicial))
+                        }
                     }
                     .onEnded {value in escalaInicial = value.magnification
                     }
@@ -131,8 +144,9 @@ struct ContentView: View {
             
         }
         .onAppear(){
-            shoesVM.selectedShoe = shoesVM.shoes.first
             rotacion()
+            shoesVM.selectedShoe = shoesVM.shoes.first
+            favorito = shoesVM.selectedShoe?.favorito ?? false
                     
         }
         .alert("App error",
@@ -157,5 +171,5 @@ struct ContentView: View {
 
 
 #Preview(windowStyle: .automatic) {
-    ContentView()
+    ContentView.preview
 }
