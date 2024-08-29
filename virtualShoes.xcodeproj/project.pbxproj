@@ -28,6 +28,7 @@
 		3B694FF02C74F81400CC2BE1 /* DataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B694FEF2C74F81400CC2BE1 /* DataTest.swift */; };
 		3B990F7E2C7A83CA002480C5 /* favoritosExpositor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B990F7D2C7A83CA002480C5 /* favoritosExpositor.swift */; };
 		3BB790DE2C7B37D9003A4F6E /* favoritosExpositorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB790DD2C7B37D9003A4F6E /* favoritosExpositorTest.swift */; };
+		3BFF82812C7F6EA8007BB5F1 /* favoritosDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFF82802C7F6EA8007BB5F1 /* favoritosDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		3B694FEF2C74F81400CC2BE1 /* DataTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTest.swift; sourceTree = "<group>"; };
 		3B990F7D2C7A83CA002480C5 /* favoritosExpositor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoritosExpositor.swift; sourceTree = "<group>"; };
 		3BB790DD2C7B37D9003A4F6E /* favoritosExpositorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoritosExpositorTest.swift; sourceTree = "<group>"; };
+		3BFF82802C7F6EA8007BB5F1 /* favoritosDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoritosDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				3B694FC82C74D73500CC2BE1 /* virtualShoesApp.swift */,
 				3B990F7D2C7A83CA002480C5 /* favoritosExpositor.swift */,
+				3BFF82802C7F6EA8007BB5F1 /* favoritosDetail.swift */,
 				3BB790DD2C7B37D9003A4F6E /* favoritosExpositorTest.swift */,
 				3B694FCA2C74D73500CC2BE1 /* ContentView.swift */,
 				3B1D5B992C77F5E80062058F /* shoeVolumen.swift */,
@@ -255,6 +258,7 @@
 				3B694FEC2C74F35600CC2BE1 /* ShoesViewModel.swift in Sources */,
 				3B694FC92C74D73500CC2BE1 /* virtualShoesApp.swift in Sources */,
 				3B1D5B9A2C77F5E80062058F /* shoeVolumen.swift in Sources */,
+				3BFF82812C7F6EA8007BB5F1 /* favoritosDetail.swift in Sources */,
 				3B694FF02C74F81400CC2BE1 /* DataTest.swift in Sources */,
 				3B694FE22C74DB1C00CC2BE1 /* ShoesModel.swift in Sources */,
 			);

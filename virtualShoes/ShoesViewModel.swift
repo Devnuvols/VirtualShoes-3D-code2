@@ -28,10 +28,5 @@ final class ShoesViewModel {
             showAlert.toggle()
         }
     }
-    // Cambia el valor de "favorito" para un zapato en particular
-     //  func toggleFavorito(for shoe: ShoeModel) {
-     //      if let index = shoes.firstIndex(where: { $0.id == shoe.id }) {
-     //          shoes[index].favorito.toggle()
-     //      }
-     //  }
+  
 }

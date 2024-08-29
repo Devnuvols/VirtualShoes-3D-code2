@@ -80,7 +80,7 @@ struct ContentView: View {
                         }
                         .toggleStyle(.button)
                         Button {
-                            open(id: "shoesFavoTest")
+                            open(id: "shoesFavo")
                         } label: {
                             Text("Ver favoritos")
                         }

@@ -35,5 +35,10 @@ struct virtualShoesApp: App {
             favoritosExpositor()
                 .environment(shoesVM)
         }
+        
+        WindowGroup(id: "shoesFavoDetail"){
+            favoritosDetail()
+                .environment(shoesVM)
+        }
     }
 }
